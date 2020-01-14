@@ -36,3 +36,7 @@
     transform: rotate(360deg);
   }
 }
+
+.mainPanel {
+  margin-top: 2.5rem
+}
