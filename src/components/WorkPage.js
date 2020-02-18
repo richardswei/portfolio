@@ -13,15 +13,10 @@ class WorkPage extends Component {
             <Card className="work-card">
               <Card.Img variant="top" src="./work/cud_screenshot.JPG" />
               <Card.Header className="center-content">
-                <ButtonToolbar>
-                  <ButtonGroup>
-                    <Button variant='outline-primary' target="_blank" href="https://chinese-urban-dictionary.herokuapp.com">See Demo</Button>
-                    <Button variant='primary' target="_blank" href="https://github.com/richardswei/chinese-urban-dictionary">
-                      <Image className="github-logo" src="/icons/GitHub-Mark-Light-64px.png"></Image>
-                      <Image className="github-logo" src="/icons/github-logo-white.png"></Image>
-                    </Button>
-                  </ButtonGroup>
-                </ButtonToolbar>
+                <ProjectButtonset
+                  githubLink = "https://github.com/richardswei/chinese-urban-dictionary"
+                  demoLink = "https://chinese-urban-dictionary.herokuapp.com"
+                />
               </Card.Header>
               <Card.Body>
                 <Card.Title>Chang's Slang - The Chinese Urban Dictionary</Card.Title>
@@ -32,30 +27,27 @@ class WorkPage extends Component {
                 </Card.Text>
               </Card.Body>
               <Card.Footer className="center-content">
-                <small className="text-muted">Last updated 3 mins ago</small>
+                <Card.Text><strong>Skills Used:</strong> Ruby on Rails, React, MySQL, Heroku, RESTful API Development</Card.Text>
               </Card.Footer>
             </Card>
             <Card className="work-card">
-              <Card.Img variant="top" src="holder.js/100px160" />
+              <Card.Img variant="top" src="./work/ticketalert-screenshot.png" />
               <Card.Header className="center-content">
-                <ButtonToolbar>
-                  <ButtonGroup>
-                    <Button variant='outline-primary' target="_blank" href="https://chinese-urban-dictionary.herokuapp.com">See Demo</Button>
-                    <Button variant='primary' target="_blank" href="https://github.com/richardswei/chinese-urban-dictionary">
-                      <Image className="github-logo" src="/icons/GitHub-Mark-Light-64px.png"></Image>
-                      <Image className="github-logo" src="/icons/github-logo-white.png"></Image>
-                    </Button>
-                  </ButtonGroup>
-                </ButtonToolbar>
+                <ProjectButtonset
+                  githubLink = "https://github.com/richardswei/ticket-alert"
+                  demoLink = "https://seatgeek-ticket-alert.herokuapp.com"
+                />
               </Card.Header>
               <Card.Body>
                 <Card.Title>Ticket Alert</Card.Title>
                 <Card.Text>
-                  Description of the project
+                  Ticket Alert is a web app that tracks secondhand ticket prices from SeatGeek. 
+                  Registered users can follow events and receive emails when the lowest price 
+                  for a ticket to followed events drop. Users can also view the recent price history of each event
                 </Card.Text>
               </Card.Body>
               <Card.Footer className="center-content">
-                <small className="text-muted">Last updated 3 mins ago</small>
+                <Card.Text><strong>Skills Used:</strong> Ruby on Rails, React, PostgreSQL, Heroku, Cron</Card.Text>
               </Card.Footer>
 
 
@@ -67,3 +59,19 @@ class WorkPage extends Component {
 }
  
 export default WorkPage
+
+function ProjectButtonset(props) {
+  const githubLink = props.githubLink;
+  const demoLink = props.demoLink;
+  return (
+    <ButtonToolbar>
+      <ButtonGroup>
+        <Button variant='outline-primary' target="_blank" href={demoLink}>See Demo</Button>
+        <Button variant='primary' target="_blank" href={githubLink}>
+          <Image className="github-logo" src="/icons/GitHub-Mark-Light-64px.png"></Image>
+          <Image className="github-logo" src="/icons/github-logo-white.png"></Image>
+        </Button>
+      </ButtonGroup>
+    </ButtonToolbar>
+  )
+}

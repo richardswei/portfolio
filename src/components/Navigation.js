@@ -1,13 +1,14 @@
 import React, { Component } from 'react'
 import {Navbar, Nav} from 'react-bootstrap'
 import { Link } from 'react-router-dom'
+import './Navigation.css';
 
 class Navigation extends Component {
     componentDidMount() {
     }
     render() {
       return (
-        <Navbar collapseOnSelect expand="md" bg="dark" variant="dark">
+        <Navbar collapseOnSelect expand="md">
           <Navbar.Brand as={Link} to="/">Richard Wei</Navbar.Brand>
           <Navbar.Toggle aria-controls="responsive-navbar-nav" />
           <Navbar.Collapse id="responsive-navbar-nav">

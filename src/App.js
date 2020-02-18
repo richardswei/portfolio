@@ -15,27 +15,30 @@ import {
 import Navigation from 'components/Navigation';
 import WorkPage from 'components/WorkPage';
 import ArtPage from 'components/ArtPage';
+import AboutPage from 'components/AboutPage';
 
 export default function App() {
   return (
     <Router>
       <div className="my-auto">
-        <Navigation/>
         <Container className='mainPanel'>
-          <Switch>
-            <Route path="/about">
-              <About />
-            </Route>
-            <Route path="/artwork">
-              <Art />
-            </Route>
-            <Route path="/programming">
-              <Work />
-            </Route>
-            <Route path="/">
-              <Home />
-            </Route>
-          </Switch>
+          <Navigation/>
+          <Container>
+            <Switch>
+              <Route path="/about">
+                <About />
+              </Route>
+              <Route path="/artwork">
+                <Art />
+              </Route>
+              <Route path="/programming">
+                <Work />
+              </Route>
+              <Route path="/">
+                <Home />
+              </Route>
+            </Switch>
+          </Container>
         </Container>
       </div>
     </Router>
@@ -46,19 +49,19 @@ function Home() {
   return (
     <Container>
       <Row>
-        <Col xs={{order: 1}} sm={{ span: 6, order: 1 }} md={{ span: 4, order: 0 }} className="my-auto">
-          <Link to="/artwork">
-            <h3 className="text-center">artwork</h3>
+        <Col xs={{order: 1}} sm={{ span: 6, order: 1 }} lg={{ span: 4, order: 0 }} className="my-auto">
+          <Link  to="/artwork">
+            <h2 className="big-link text-center">artwork</h2>
           </Link>
         </Col>
-        <Col md={{ span: 4, order: 4 }}>
+        <Col lg={{ span: 4, order: 4 }}>
           <Link to="/about">
-            <Image className="scaled-image" src="./portrait2_square.jpg" rounded></Image>
+            <Image className="scaled-image" src="./portrait2_square_bw.jpg" rounded></Image>
           </Link>
         </Col>
-        <Col xs={{order: 12}} md={4} sm={{ span: 6, order: 12 }} className="my-auto">
-          <Link to="/programming">
-            <h3 className="text-center">programming</h3>
+        <Col xs={{order: 12}} lg={4} sm={{ span: 6, order: 12 }} className="my-auto">
+          <Link  to="/programming">
+            <h2 className="big-link text-center">programming</h2>
           </Link>
         </Col>
       </Row>
@@ -71,7 +74,11 @@ function Home() {
 }
 
 function About() {
-  return <h2>About</h2>;
+  return( 
+    <div>
+      <AboutPage/>
+    </div>
+  )
 }
 
 function Art() {
