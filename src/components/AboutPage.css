@@ -4,3 +4,9 @@
 .portrait {
     margin-bottom: 1rem
 }
+.centered {
+    margin: auto;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+
+}

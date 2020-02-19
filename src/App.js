@@ -56,7 +56,7 @@ function Home() {
         </Col>
         <Col lg={{ span: 4, order: 4 }}>
           <Link to="/about">
-            <Image className="scaled-image" src="./portrait2_square_bw.jpg" rounded></Image>
+            <Image className="scaled-image portrait" src="./portrait2_square_bw.jpg" rounded></Image>
           </Link>
         </Col>
         <Col xs={{order: 12}} lg={4} sm={{ span: 6, order: 12 }} className="my-auto">
