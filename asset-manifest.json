@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/portfolio/static/css/main.7e136700.chunk.css",
+    "main.js": "/portfolio/static/js/main.c0e54b14.chunk.js",
+    "main.js.map": "/portfolio/static/js/main.c0e54b14.chunk.js.map",
+    "runtime-main.js": "/portfolio/static/js/runtime-main.70964fd7.js",
+    "runtime-main.js.map": "/portfolio/static/js/runtime-main.70964fd7.js.map",
+    "static/css/2.e34334fb.chunk.css": "/portfolio/static/css/2.e34334fb.chunk.css",
+    "static/js/2.73144743.chunk.js": "/portfolio/static/js/2.73144743.chunk.js",
+    "static/js/2.73144743.chunk.js.map": "/portfolio/static/js/2.73144743.chunk.js.map",
+    "index.html": "/portfolio/index.html",
+    "precache-manifest.3184deb45197f3a55208d23b6dbae0c0.js": "/portfolio/precache-manifest.3184deb45197f3a55208d23b6dbae0c0.js",
+    "service-worker.js": "/portfolio/service-worker.js",
+    "static/css/2.e34334fb.chunk.css.map": "/portfolio/static/css/2.e34334fb.chunk.css.map",
+    "static/css/main.7e136700.chunk.css.map": "/portfolio/static/css/main.7e136700.chunk.css.map",
+    "static/js/2.73144743.chunk.js.LICENSE.txt": "/portfolio/static/js/2.73144743.chunk.js.LICENSE.txt",
+    "static/media/richard_wei_resume.pdf": "/portfolio/static/media/richard_wei_resume.6282ed15.pdf"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.70964fd7.js",
+    "static/css/2.e34334fb.chunk.css",
+    "static/js/2.73144743.chunk.js",
+    "static/css/main.7e136700.chunk.css",
+    "static/js/main.c0e54b14.chunk.js"
+  ]
+}
