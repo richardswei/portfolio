@@ -3,6 +3,10 @@ import {Image, Card, CardDeck, Button, ButtonGroup, ButtonToolbar} from 'react-b
 import Col from 'react-bootstrap/Col'
 import Row from 'react-bootstrap/Row'
 import { Link } from 'react-router-dom'
+import TicketAlert from '../images/work/ticketalert-screenshot.png'
+import ChineseUrbanDictionary from '../images/work/cud-screenshot.jpg'
+import GithubLogo from '../images/icons/GitHub-Mark-Light-64px.png'
+import GithubLogoWord from '../images/icons/github-logo-white.png'
 
 class WorkPage extends Component {
     componentDidMount() {
@@ -11,7 +15,7 @@ class WorkPage extends Component {
         return (
           <CardDeck>
             <Card className="work-card">
-              <Card.Img variant="top" src="./work/cud_screenshot.JPG" />
+              <Card.Img variant="top" src={ChineseUrbanDictionary} />
               <Card.Header className="center-content">
                 <ProjectButtonset
                   githubLink = "https://github.com/richardswei/chinese-urban-dictionary"
@@ -31,7 +35,7 @@ class WorkPage extends Component {
               </Card.Footer>
             </Card>
             <Card className="work-card">
-              <Card.Img variant="top" src="./work/ticketalert-screenshot.png" />
+              <Card.Img variant="top" src={TicketAlert} />
               <Card.Header className="center-content">
                 <ProjectButtonset
                   githubLink = "https://github.com/richardswei/ticket-alert"
@@ -68,8 +72,8 @@ function ProjectButtonset(props) {
       <ButtonGroup>
         <Button variant='outline-primary' target="_blank" href={demoLink}>See Demo</Button>
         <Button variant='primary' target="_blank" href={githubLink}>
-          <Image className="github-logo" src="/icons/GitHub-Mark-Light-64px.png"></Image>
-          <Image className="github-logo" src="/icons/github-logo-white.png"></Image>
+          <Image className="github-logo" src={GithubLogo}></Image>
+          <Image className="github-logo" src={GithubLogoWord}></Image>
         </Button>
       </ButtonGroup>
     </ButtonToolbar>

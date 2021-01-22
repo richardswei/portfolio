@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import {Container, Row, Col, Image, Button, ButtonToolbar} from 'react-bootstrap'
 import pdf from '../docs/richard_wei_resume.pdf'
 import './AboutPage.css';
+import headshot from '../images/self/headshot_square.jpg'
 // import { Link } from 'react-router-dom'
 
 class AboutPage extends Component {
@@ -27,7 +28,7 @@ function Column1() {
     return(
         <div>   
             <h1>Richard Wei</h1>
-            <Image className="scaled-image" src="headshot_square.jpg" rounded ></Image>
+            <Image className="scaled-image" src={headshot} rounded ></Image>
             <Container>
                 <Row>
                     <ButtonToolbar className="centered">
@@ -45,7 +46,12 @@ function Column2() {
     return(
         <Container>
             <Row>
-                <h1>About</h1>
+                <h3>About</h3>
+            </Row>
+            <Row>
+                <p>
+                    Apr 2020 – Present | Software Engineer, Healthtrio 
+                </p>
                 <p>
                     Jan 2019 – Aug 2019 | Teacher/Tutor, Stepping Stones to Learning 
                 </p>
@@ -55,6 +61,8 @@ function Column2() {
             </Row>
             <Row>
                 <h4>Contact Me</h4>
+            </Row>
+            <Row>
                 <p>If you have any opportunities or projects you would like to work together on, feel free to reach out at <strong>wei.richard.s@gmail.com</strong></p>
             </Row>
         </Container>

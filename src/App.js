@@ -7,7 +7,7 @@ import Col from 'react-bootstrap/Col'
 import Row from 'react-bootstrap/Row'
 import Image from 'react-bootstrap/Image'
 import {
-  BrowserRouter as Router,
+  HashRouter as Router,
   Switch,
   Route,
   Link
@@ -16,6 +16,7 @@ import Navigation from 'components/Navigation';
 import WorkPage from 'components/WorkPage';
 import ArtPage from 'components/ArtPage';
 import AboutPage from 'components/AboutPage';
+import portrait from './images/self/portrait2_square_bw.jpg'
 
 export default function App() {
   return (
@@ -25,16 +26,16 @@ export default function App() {
           <Navigation/>
           <Container>
             <Switch>
-              <Route path="/about">
+              <Route exact path="/about">
                 <About />
               </Route>
-              <Route path="/artwork">
+              <Route exact path="/artwork">
                 <Art />
               </Route>
-              <Route path="/programming">
+              <Route exact path="/programming">
                 <Work />
               </Route>
-              <Route path="/">
+              <Route exact path="/">
                 <Home />
               </Route>
             </Switch>
@@ -56,7 +57,7 @@ function Home() {
         </Col>
         <Col lg={{ span: 4, order: 4 }}>
           <Link to="/about">
-            <Image className="scaled-image portrait" src="./portrait2_square_bw.jpg" rounded></Image>
+            <Image className="scaled-image portrait" src={portrait} rounded></Image>
           </Link>
         </Col>
         <Col xs={{order: 12}} lg={4} sm={{ span: 6, order: 12 }} className="my-auto">
