@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "4243367a2045605c52698c3df6560c03",
+    "revision": "55b1f2ed9a011f551207081bcf7b41fc",
     "url": "/portfolio/index.html"
   },
   {
@@ -8,7 +8,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/portfolio/static/css/2.e34334fb.chunk.css"
   },
   {
-    "revision": "03ad14a9459a5f5a0f95",
+    "revision": "3c31d757cdf1d0e20b5c",
     "url": "/portfolio/static/css/main.da4c00fc.chunk.css"
   },
   {
@@ -20,8 +20,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/portfolio/static/js/2.f20fedc4.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "03ad14a9459a5f5a0f95",
-    "url": "/portfolio/static/js/main.0a697c98.chunk.js"
+    "revision": "3c31d757cdf1d0e20b5c",
+    "url": "/portfolio/static/js/main.29e82ed6.chunk.js"
   },
   {
     "revision": "f89f2099577e680dc7b6",
@@ -44,8 +44,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/portfolio/static/media/portrait2_square_bw.24b54a05.jpg"
   },
   {
-    "revision": "264defe34b56cb71552ab0e30d77004b",
-    "url": "/portfolio/static/media/richard_wei_resume.264defe3.pdf"
+    "revision": "0c9ad8f7ae879c132d8553b3e5d2c8a8",
+    "url": "/portfolio/static/media/richard_wei_resume.0c9ad8f7.pdf"
   },
   {
     "revision": "639484c85f28aac455aae1f31beb001e",
