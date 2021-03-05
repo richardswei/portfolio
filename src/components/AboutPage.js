@@ -50,7 +50,7 @@ function Column2() {
             </Row>
             <Row>
                 <p>
-                    Apr 2020 – Present | Software Engineer, Healthtrio 
+                    Apr 2020 – Present | Software Engineer I, HealthTrio 
                 </p>
                 <p>
                     Jan 2019 – Aug 2019 | Teacher/Tutor, Stepping Stones to Learning 
