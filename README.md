@@ -1,4 +1,5 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+To deploy to gh-pages, run
+### `npm run deploy`
 
 ## Available Scripts
 
